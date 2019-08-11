@@ -1,0 +1,580 @@
+2019-01-26 15:06:37,133 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 15:07:06,369 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 15:07:07,448 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 15:08:06,474 [6] INFO Quicker.App - 开始检查更新...
+2019-01-26 15:08:06,703 [6] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 16:07:35,605 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 16:09:02,064 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 16:09:02,257 [13] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：未能找到路径“C:\Users\wweic\AppData\Local\Quicker\data\profiles”的一部分。
+System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\wweic\AppData\Local\Quicker\data\profiles”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   在 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   在 System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   在 Quicker.Domain.LocalDataMgr.GetDeletingProfiles()
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+2019-01-26 16:09:02,917 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 16:10:02,244 [17] INFO Quicker.App - 开始检查更新...
+2019-01-26 16:10:02,518 [17] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 16:27:24,590 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 16:27:28,695 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 16:27:29,476 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 16:27:31,162 [11] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-01-26 16:28:30,770 [7] INFO Quicker.App - 开始检查更新...
+2019-01-26 16:28:30,905 [7] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 16:58:28,833 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 16:58:34,161 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 16:58:35,289 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 16:59:37,132 [7] INFO Quicker.App - 开始检查更新...
+2019-01-26 16:59:37,257 [7] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 19:42:34,233 [11] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-01-26 19:47:31,995 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 19:47:34,370 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 19:47:35,183 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 19:48:35,726 [6] INFO Quicker.App - 开始检查更新...
+2019-01-26 19:48:35,820 [6] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 20:45:27,404 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 20:45:30,108 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 20:45:30,796 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 20:46:31,145 [7] INFO Quicker.App - 开始检查更新...
+2019-01-26 20:46:31,281 [7] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 20:55:30,853 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 20:59:15,265 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 20:59:16,342 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 20:59:16,877 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 21:00:17,231 [14] INFO Quicker.App - 开始检查更新...
+2019-01-26 21:00:17,314 [14] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-01-26 21:17:58,236 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 21:18:00,764 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 21:18:01,328 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 21:18:01,856 [11] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-01-26 22:57:32,737 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-26 22:57:34,003 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-26 22:57:34,534 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-26 22:57:35,031 [11] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   在 System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-01-26 22:58:34,874 [7] INFO Quicker.App - 开始检查更新...
+2019-01-26 22:58:34,906 [7] ERROR Quicker.App - 检查更新出错。发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<CheckUpdateAsync>d__34.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.App.CheckUpdate()
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'getquicker.net'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Quicker.Domain.Services.WebConnector.<CheckUpdateAsync>d__34.MoveNext()<---
+
+2019-01-27 09:25:09,845 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-01-27 09:25:12,383 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-01-27 09:25:13,944 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-01-27 09:26:14,617 [6] INFO Quicker.App - 开始检查更新...
+2019-01-27 09:26:14,708 [6] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.8.5.0。
+2019-02-15 18:13:44,376 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-02-15 18:13:46,298 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-02-15 18:13:47,153 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-02-15 18:14:47,882 [15] INFO Quicker.App - 开始检查更新...
+2019-02-15 18:15:02,917 [15] ERROR Quicker.App - 检查更新出错。发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.App.CheckUpdate()
+---> (内部异常 #0) System.Threading.Tasks.TaskCanceledException: 已取消一个任务。<---
+
+2019-02-22 20:44:15,269 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-02-22 20:44:18,446 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-02-22 20:44:19,770 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-02-22 20:44:21,278 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-02-22 20:45:20,282 [17] INFO Quicker.App - 开始检查更新...
+2019-02-22 20:45:20,362 [17] INFO Quicker.App - 检查更新成功。当前版本:0.8.5.0，最新版本：0.9.14.0。
+2019-06-12 20:51:03,463 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-12 20:51:06,231 [1] INFO Quicker.PopupWindow - Windows 版本:10_0
+2019-06-12 20:51:07,947 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-06-12 20:51:09,045 [18] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.InvalidOperationException: 错误：(Unauthorized)Status Code: 401; Unauthorized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.InvalidOperationException: 错误：(Unauthorized)Status Code: 401; Unauthorized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-06-12 20:52:08,601 [6] INFO Quicker.App - 开始检查更新...
+2019-06-12 20:52:08,695 [6] ERROR Quicker.App - 检查更新出错。发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.InvalidOperationException: 错误：Unauthorized
+   在 Quicker.Domain.Services.WebConnector.<CheckUpdateAsync>d__34.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.App.CheckUpdate()
+---> (内部异常 #0) System.InvalidOperationException: 错误：Unauthorized
+   在 Quicker.Domain.Services.WebConnector.<CheckUpdateAsync>d__34.MoveNext()<---
+
+2019-06-12 21:37:07,120 [18] ERROR Quicker.Domain.Services.StorageService - 同步数据出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.InvalidOperationException: 错误：(Unauthorized)Status Code: 401; Unauthorized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Services.StorageService.DoSync()
+   在 Quicker.Domain.Services.StorageService.SyncThreadFunc()
+---> (内部异常 #0) System.InvalidOperationException: 错误：(Unauthorized)Status Code: 401; Unauthorized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+   在 Quicker.Domain.Services.WebConnector.<DoSyncAsync>d__33.MoveNext()<---
+
+2019-06-12 21:37:41,912 [1] INFO Quicker.PopupWindow - 在win10中运行，启动blur！
+2019-06-12 21:42:02,417 [1] WARN Quicker.PopupWindow - 获取进程路径失败 pid=6784  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.PopupWindow.UpdateContextPanel()
+2019-06-12 22:31:04,508 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-12 22:31:23,320 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-12 22:31:23,382 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-06-12 22:32:23,487 [23] INFO Quicker.App - 开始检查更新...
+2019-06-12 22:32:23,602 [23] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-06-12 23:11:54,080 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-06-12 23:12:24,153 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-06-13 09:53:06,424 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-13 09:53:10,672 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-13 09:53:10,730 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-06-13 09:54:10,966 [18] INFO Quicker.App - 开始检查更新...
+2019-06-13 09:54:11,029 [18] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-06-13 11:16:36,968 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-06-13 12:09:53,051 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-06-13 12:10:43,598 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-06-13 12:12:04,031 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-06-13 12:12:33,854 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-06-13 15:32:22,609 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-06-13 15:35:10,583 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-06-13 15:37:28,822 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-06-15 18:33:46,873 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-15 18:34:05,251 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-15 18:34:05,562 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-06-15 18:35:06,806 [15] INFO Quicker.App - 开始检查更新...
+2019-06-15 18:35:06,915 [15] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-06-20 15:49:10,960 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-20 15:49:24,831 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-20 15:49:24,877 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-06-20 15:50:25,127 [8] INFO Quicker.App - 开始检查更新...
+2019-06-20 15:50:25,358 [8] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-06-20 16:09:28,212 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-20 16:09:30,870 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-20 16:09:30,917 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-06-20 16:13:19,500 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-06-20 16:13:22,356 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-06-20 16:13:22,407 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-01 12:37:34,900 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-01 12:37:36,837 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-01 12:37:36,868 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-01 12:38:37,037 [13] INFO Quicker.App - 开始检查更新...
+2019-07-01 12:38:37,131 [13] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-07-01 17:23:37,419 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-07-01 17:23:57,029 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-07-03 12:48:40,212 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-03 12:48:42,789 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-03 12:48:42,836 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-03 12:49:43,105 [7] INFO Quicker.App - 开始检查更新...
+2019-07-03 12:49:43,286 [7] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：0.11.9.0。
+2019-07-03 13:19:55,972 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7312  processName=PrintInf64。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-03 13:25:54,903 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=744  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-03 13:57:30,932 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=744  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-03 13:57:39,900 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=744  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-03 13:57:44,543 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=744  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-20 11:57:13,512 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-20 11:57:15,371 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-20 11:57:15,418 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-20 11:58:15,586 [7] INFO Quicker.App - 开始检查更新...
+2019-07-20 11:58:15,702 [7] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：1.0.0.0。
+2019-07-20 12:36:45,816 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=8796  processName=PrintInf64。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-20 16:29:40,406 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=4204  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-07-21 11:09:43,859 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-21 11:09:50,937 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-21 11:09:51,077 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-21 11:10:13,233 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-07-21 11:10:51,818 [8] INFO Quicker.App - 开始检查更新...
+2019-07-21 11:10:51,912 [8] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：1.0.0.0。
+2019-07-21 13:24:14,697 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-07-21 15:42:58,638 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-07-29 23:46:29,617 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-29 23:46:32,304 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-29 23:46:32,336 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-29 23:47:32,507 [7] INFO Quicker.App - 开始检查更新...
+2019-07-29 23:47:32,585 [7] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：1.0.4.0。
+2019-07-29 23:48:05,739 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-07-30 23:11:37,159 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-30 23:11:39,945 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-30 23:11:39,992 [1] INFO Quicker.View.PopupWindow - 在win10中运行，启动blur！
+2019-07-30 23:12:40,188 [7] INFO Quicker.App - 开始检查更新...
+2019-07-30 23:12:40,282 [7] INFO Quicker.App - 检查更新成功。当前版本:0.11.9.0，最新版本：1.0.4.0。
+2019-07-30 23:33:44,625 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-30 23:33:47,749 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-30 23:34:37,681 [1] INFO Quicker.View.PopupWindow - 检查更新成功。当前版本:1.0.9.0，最新版本：1.0.4.0。
+2019-07-31 23:40:44,151 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-31 23:40:47,919 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-07-31 23:57:05,324 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-07-31 23:57:07,322 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-01 00:02:41,586 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-01 00:02:57,694 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-01 23:28:34,379 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-01 23:28:36,910 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-01 23:28:54,771 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-01 23:49:19,689 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-01 23:55:25,124 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-01 23:56:28,113 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:00:21,167 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:00:31,598 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:01:31,793 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:06:44,933 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:06:58,647 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:07:03,475 [1] WARN Quicker.Domain.AppServer - 获取进程路径失败 pid=7024  processName=dwm。
+System.ComponentModel.Win32Exception (0x80004005): 拒绝访问。
+   在 System.Diagnostics.ProcessManager.OpenProcess(Int32 processId, Int32 access, Boolean throwIfExited)
+   在 System.Diagnostics.NtProcessManager.GetModuleInfos(Int32 processId, Boolean firstModuleOnly)
+   在 System.Diagnostics.NtProcessManager.GetFirstModuleInfo(Int32 processId)
+   在 System.Diagnostics.Process.get_MainModule()
+   在 Quicker.Domain.AppServer.UpdateContextPanel()
+2019-08-02 00:08:11,987 [19] WARN Quicker.Domain.Actions.X.BuildinRunners.StringProcessStep - 不是合法的Json内容。Unexpected character encountered while parsing value: G. Path '', line 0, position 0.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: G. Path '', line 0, position 0.
+   在 Newtonsoft.Json.JsonTextReader.ParseValue()
+   在 Newtonsoft.Json.Linq.JToken.ReadFrom(JsonReader reader, JsonLoadSettings settings)
+   在 Newtonsoft.Json.Linq.JToken.Parse(String json, JsonLoadSettings settings)
+   在 Quicker.Domain.Actions.X.BuildinRunners.StringProcessStep.GetFormatedJson(String json)
+2019-08-02 21:16:07,808 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-02 21:16:10,558 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-02 21:47:36,632 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-08-02 23:44:29,927 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-03 10:27:25,700 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-03 10:27:28,435 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-03 10:27:37,901 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-06 00:08:04,854 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-06 00:08:07,682 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-07 23:38:26,112 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-07 23:38:29,917 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-08 23:12:29,370 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-08 23:12:32,167 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-08 23:36:24,323 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-09 00:11:38,216 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-09 00:11:52,232 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-09 00:12:11,050 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-09 00:12:54,721 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-09 00:21:01,207 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-09 00:21:03,066 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-09 00:21:42,689 [19] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : Quicker.resources, Version=1.0.9.0, Culture=zh-CN, PublicKeyToken=3e9d8b01ee3ed71f
+2019-08-09 00:21:42,704 [19] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\Quicker.resources.dll, file does not exist.
+2019-08-09 00:21:42,704 [19] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : Quicker.resources, Version=1.0.9.0, Culture=zh-CN, PublicKeyToken=3e9d8b01ee3ed71f
+2019-08-09 00:21:42,704 [19] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\Quicker.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-CN, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-CN, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-CHS, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-CHS, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-Hans, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh-Hans, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:20,723 [1] DEBUG Nutstore.NamespaceExt.NsRoot - CurrentDomain_AssemblyResolve : ToastNotifications.resources, Version=2.5.1.0, Culture=zh, PublicKeyToken=e89d9d7314a7c797
+2019-08-09 00:28:20,723 [1] WARN Nutstore.NamespaceExt.NsRoot - Cannot resolve path C:\Users\wweic\Program Files\Nutstore\bin-4.3.2\zh-CHS\ToastNotifications.resources.dll, file does not exist.
+2019-08-09 00:28:40,382 [8] INFO Quicker.Domain.Actions.X.BuildinRunners.File.GetSelectedFilesStep - 使用Win32API获取选择的文件失败，尝试ctrl+c方式。请在资源管理器中选择文件。
+2019-08-09 00:34:53,670 [11] WARN Quicker.Domain.Actions.X.BuildinRunners.HttpStep - 发送网络请求出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 基础连接已经关闭: 连接被意外关闭。
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Actions.X.BuildinRunners.HttpStep.Execute(ActionStep step, ActionExecuteContext context, XAction action)
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 基础连接已经关闭: 连接被意外关闭。
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---<---
+
+2019-08-09 00:34:59,494 [11] WARN Quicker.Domain.Actions.X.BuildinRunners.HttpStep - 发送网络请求出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 基础连接已经关闭: 连接被意外关闭。
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Actions.X.BuildinRunners.HttpStep.Execute(ActionStep step, ActionExecuteContext context, XAction action)
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 基础连接已经关闭: 连接被意外关闭。
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---<---
+
+2019-08-09 00:45:20,955 [32] WARN Quicker.Domain.Actions.X.BuildinRunners.HttpStep - 发送网络请求出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'www.zhongbr.cn'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Actions.X.BuildinRunners.HttpStep.Execute(ActionStep step, ActionExecuteContext context, XAction action)
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'www.zhongbr.cn'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---<---
+
+2019-08-09 00:45:47,337 [12] WARN Quicker.Domain.Actions.X.BuildinRunners.HttpStep - 发送网络请求出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 111.230.38.118:443
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Actions.X.BuildinRunners.HttpStep.Execute(ActionStep step, ActionExecuteContext context, XAction action)
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 111.230.38.118:443
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---<---
+
+2019-08-09 00:45:55,742 [10] WARN Quicker.Domain.Actions.X.BuildinRunners.HttpStep - 发送网络请求出错：发生一个或多个错误。
+System.AggregateException: 发生一个或多个错误。 ---> System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 111.230.38.118:443
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   在 Quicker.Domain.Actions.X.BuildinRunners.HttpStep.Execute(ActionStep step, ActionExecuteContext context, XAction action)
+---> (内部异常 #0) System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 111.230.38.118:443
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---<---
+
+2019-08-10 00:28:36,967 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-10 00:28:39,740 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-10 00:34:20,647 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-10 00:34:23,274 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-10 00:45:02,532 [7] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\Icons8 常见彩色图标 833 个, destination=)
+2019-08-10 00:45:02,547 [7] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-10 00:57:20,445 [35] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-10 00:57:20,445 [35] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-10 00:58:50,279 [37] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-10 00:58:50,279 [37] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-10 01:03:17,628 [31] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker, destination=)
+2019-08-10 01:03:17,628 [31] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-10 08:20:13,670 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-10 08:20:16,951 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-10 09:14:00,208 [38] WARN Quicker.Domain.Actions.X.BuildinRunners.StringProcessStep - 不是合法的Json内容。Unexpected character encountered while parsing value: 大. Path '', line 0, position 0.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: 大. Path '', line 0, position 0.
+   在 Newtonsoft.Json.JsonTextReader.ParseValue()
+   在 Newtonsoft.Json.Linq.JToken.ReadFrom(JsonReader reader, JsonLoadSettings settings)
+   在 Newtonsoft.Json.Linq.JToken.Parse(String json, JsonLoadSettings settings)
+   在 Quicker.Domain.Actions.X.BuildinRunners.StringProcessStep.GetFormatedJson(String json)
+2019-08-11 10:15:31,464 [1] INFO Quicker.App -         =============  Started Logging  =============        
+2019-08-11 10:15:34,918 [1] INFO Quicker.View.PopupWindow - Windows 版本:10_0
+2019-08-11 10:18:28,170 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-08-11 10:35:37,321 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-11 17:53:06,008 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话锁定了
+2019-08-11 18:58:30,897 [1] INFO Quicker.Domain.Services.SystemEventsWatcher - 会话解锁了
+2019-08-11 21:25:37,802 [37] INFO Quicker.Domain.Actions.X.BuildinRunners.File.GetSelectedFilesStep - 使用Win32API获取选择的文件失败，尝试ctrl+c方式。请在资源管理器中选择文件。
+2019-08-11 22:16:35,214 [50] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-11 22:16:35,277 [50] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:17:50,268 [51] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-11 22:17:50,268 [51] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:18:18,501 [51] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-11 22:18:18,501 [51] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:18:45,154 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-11 22:18:45,154 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:44:08,522 [38] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker\test, destination=)
+2019-08-11 22:44:08,525 [38] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:49:02,651 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker, destination=)
+2019-08-11 22:49:02,651 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 22:49:51,318 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (fileOperation=Delete, source=C:\Users\wweic\Documents\Tencent Files\1259721621\FileRecv\quicker, destination=)
+2019-08-11 22:49:51,318 [33] DEBUG Nutstore.NamespaceExt.NsRoot - NutstoreCopyHook CopyCallback (result=Yes)
+2019-08-11 23:10:16,532 [10] INFO Quicker.Domain.Actions.X.BuildinRunners.File.GetSelectedFilesStep - 使用Win32API获取选择的文件失败，尝试ctrl+c方式。获得的文件数量为0，尝试Ctrl+C选择
